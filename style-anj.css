@@ -2,49 +2,60 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 2px solid red; */
+    font-family: "SUSE", sans-serif;
   }
   
-  body {
+  .saturn-project{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .frame{
+    background-color: #1e1e1e;
+   
+  }
+  .saturn-ring-description{
+    color: whitesmoke;
+    margin: 0px 50px;
+
+  }
+
+  .saturn-ring-description h1{
+    text-align: start;
+    margin: 20px 0px;
+    padding: 10px;
+  }
+  
+  .saturn-ring-description p{
+    letter-spacing: 1px;
+    width: 800px;
+    align-items: center;
+  }
+  .saturn-ring{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: rgb(206, 60, 60);
+    margin: 20px;
+    flex-wrap: wrap;
   }
-  
-  /* #ramme_observation_av_saturns {
-  } */
-  
-  .frame {
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 620px;
-    /* height: 1440px; */
+  .saturn-ringer-image img, .telescopeimage img{
+    max-width: 400px;
+    min-height: 400px;
+  }
+
+  .moon_frame{
     background-color: black;
   }
-  .text {
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin: 20px;
-  }
-  .images {
-    /* display: contents;
-    background-color: transparent;
-    align-items: flex-end; */
-    width: 400px;
-    justify-content: end;
-  }
-  */ p {
-    line-height: 2;
-    font-size: 1px;
-  }
-  
-  .h2 {
-    display: flex;
-    justify-content: flex-start;
-    color: aqua;
-  }
-  
+
+  .moonimage img, .magnefeltimage img{
+   height: 400px;
+width: 400px;
+}
+
+.magnefeltimage{
+  display: flex;
+  width: 500px;
+  justify-content: right;
+}
